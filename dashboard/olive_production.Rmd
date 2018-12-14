@@ -1,0 +1,123 @@
+---
+title: ""
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(devtools)
+library(sp)
+library(raster)
+library(leaflet)
+library(readr)
+library(shiny)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+tnMAP<- getData(name="GADM",
+                country="TUN", level=1)
+Code <- read_delim("C:/Users/ERIC BEOGO/Desktop/projet r/dashboard/Code Delegation Tunisie.csv", 
+                   ";", escape_double = FALSE, trim_ws = TRUE)
+Code[24,1]="Kébili"
+colnames(Code)=c("region","HASC")
+ba <- read_delim("C:/Users/ERIC BEOGO/Desktop/projet r/dashboard/evolution_de_la_production_dolives_de_huile_en_tonnes_.csv", 
+    ";", escape_double = FALSE, trim_ws = TRUE)
+a=merge(ba,Code,by.x="Gouvernorat",by.y="region")
+
+
+#a1=a[which(a$Date==2017),]
+
+
+
+```
+
+`
+
+
+
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+###Prodaction for each governorate(tons, 2017)
+
+```{r}
+a1=a[which(a$Date==2017),]
+m=NULL
+m=leaflet(a1)
+m=m%>%addProviderTiles(provider = providers$Thunderforest)
+labels<-sprintf("<strong>%s<br/></strong>%g<br/>",a1$Gouvernorat,a1$Production)
+labels<-paste(labels)%>%lapply(htmltools::HTML)
+
+col<-colorRampPalette(c("gray","green","blue","red","yellow"))
+
+pal<-colorNumeric(col(268),domain = a1$Production,n=268)
+m=m%>% addPolygons(data=tnMAP,
+                   fillColor=~pal(a1$Production),
+                   fillOpacity=10,
+                   col="black",
+                   weight=1.1,
+                   opacity=0.7,
+                   highlight=highlightOptions(weight=4.0,
+                                              color="#FFFFFF",
+                                              fillOpacity = 0.7,
+                                              bringToFront = TRUE),
+                   label=labels,
+                   labelOptions=labelOptions( style = list("font-weight" = "normal",
+                                                           padding = "3px 8px"),
+                                              textsize = "15px",
+                                              direction = "auto"))
+m
+
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Prodaction for each governorate(tons, 2016)
+
+```{r}
+a2=a[which(a$Date==2016),]
+m=NULL
+m=leaflet(a2)
+m=m%>% addProviderTiles(provider = providers$Thunderforest)
+labels<-sprintf("<strong>%s<br/></strong>%g<br/>",a2$Gouvernorat,a2$Production)
+labels<-paste(labels)%>%lapply(htmltools::HTML)
+
+col<-colorRampPalette(c("gray","blue","red","yellow"))
+
+pal<-colorNumeric(col(268),domain = a2$Production,n=268)
+m=m%>% addPolygons(data=tnMAP,
+                   fillColor=~pal(a2$Production),
+                   fillOpacity=10,
+                   col="black",
+                   weight=1.1,
+                   opacity=0.7,
+                   highlight=highlightOptions(weight=4.0,
+                                              color="#FFFFFF",
+                                              fillOpacity = 0.7,
+                                              bringToFront = TRUE),
+                   label=labels,
+                   labelOptions=labelOptions( style = list("font-weight" = "normal",
+                                                           padding = "3px 8px"),
+                                              textsize = "15px",
+                                              direction = "auto"))
+m
+
+
+```
+
+### DATA
+
+```{r}
+
+DT::datatable(a[,-4], editable = TRUE)
+
+#a[which(a$Date==2017),]
+
+```
+
