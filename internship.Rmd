@@ -1,0 +1,28 @@
+---
+output:
+ 
+  html_document: 
+    toc: true
+    toc_float: true
+    
+---
+
+
+# {.tabset .tabset-fade .tabset-pills}
+
+## 15 June 2017 - 15 July 2017
+
+ study of the educational level of Tunisian youth according to parents' level of education, standard of living and parental employment.
+ This work was done with SAS (Statistical Analysis Software)
+ 
+ 
+ 
+## 11 June 2018 - 31 August 2018
+
+creation of an application R shiny for the extraction of data on Youtube and analysis of the activity of the deputies of the ARP (Assembly of the Representatives of the People) on youtube
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+name: Eric Beogo
+output_dir: '.'
+navbar:
+  title: Eric Beogo
+  type: inverse
+  left:
+  - text: HOME
+    icon: fa-home
+    href: index.html
+  - text: WORKS
+    menu:
+      - text: Internship
+        href: internship.html
+      - text: Class projects
+        href: classe.html
+      - text: out of school projects
+        href: osp.html
+  - text: SOCIAL
+    href: sociale.html
+    
+
+  - text: EDUCATION
+    href: cv.html
+  
+    
+  right:
+  - icon: fa-envelope fa-lg
+    href: contact.html
+  - icon: fa-github fa-lg
+    href: https://github.com/EricBeogo
+  - icon: fa-linkedin fa-lg
+    href: https://www.linkedin.com/in/eric-beogo-30b878140/
+  - icon: fa-facebook fa-lg
+    href: https://www.facebook.com/beogoe
+output:
+  html_document:
+    theme: united
+    highlight: textmate
+    css: styles.css
+    lib_dir: site_libs
+    self_contained: no

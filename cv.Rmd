@@ -1,0 +1,84 @@
+---
+output:
+ 
+  html_document: 
+    toc: true
+    toc_float: true
+    
+---
+
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+<p align="center">
+*Curriculum Vitae*
+</p>
+
+
+----
+
+<p align="justify">
+**Status:** Student at the <a href='http://www.essai.rnu.tn/accueil.htm'> Higher School of Statistics and Information Analysis</a>
+
+**Skills:** Word, Excel, PowerPoint, C, Java, PHP, HTML5, CSS3,R(Shiny), Python, SAS, CsPro ,Analyses Statistiques, Analyses de données, Régression, Machine Learning ,Programmation 
+
+**Interests:** Statistics, Demography, Big Data, Data Analytics, Survey Methodology,  Data Quality,  Graphical Models. 
+
+</p>
+
+----
+
+
+
+## Education
+
+<p align="justify">
+
+sept. 2018– présent
+:   **Master 2 Traitement de l'Information et Complexité du Vivant (Co diplomation Master Informatique de l’université Paris Descartes) **; <a href='http://www.enit.rnu.tn/fr/home/indexfr.php'>Ecole National d'Ingenieurs de Tunis</a> 
+
+
+sept. 2016– présent 
+:   **Diplôme nationale d’Ingénieure en Statistique et Analyse de l'Information **; <a href='http://www.essai.rnu.tn'>Ecole Superieur de la statistique et de l'analyse de l'information</a>
+
+
+oct. 2014–juil. 2016
+:   **Concours d’entrée aux grandes écoles d’ingénieur(mathématiques & physique) **;
+ Institut Préparatoire aux Études d’Ingénieur de Sfax, Sfax (Tunisie)
+
+
+oct. 2013–juil. 2014 
+:   **Baccalaureat **;
+ Lycée Municipal Vénégré, Ouagadougou (Burkina Faso) 
+
+</p>
+
+
+
+## Vie associative
+
+
+<p align="justify">
+
+2016-2017 
+: _ Membre actif du club junior Entreprise (ESSAI)
+
+  _ Membre actif du club Statisticien sans frontière (ESSAI)
+
+  _ Membre actif du club statrevolution (ESSAI) 
+ 
+2016-2018
+: Président de l'Association des Étudiants Boursiers Burkinabé en Tunisie 
+ 
+</p>
+
+## Contact 
+
+>  *email:*  <beogoe6@gmail.com> \
+>  *website:* <a href='https://ericbeogo.github.io'>https://ericbeogo.github.io</a>\

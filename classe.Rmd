@@ -1,0 +1,92 @@
+---
+output:
+ 
+  html_document: 
+    toc: true
+    toc_float: true
+    
+---
+
+
+
+
+
+# {.tabset .tabset-fade .tabset-pills}
+
+## Simple dashboard
+
+
+
+<span style="font-family:Arial; font-size:3em;">Evolution of the annual production of olives in Tunisia </span>
+
+<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="1000"
+    height="700"
+    src="dashboard/olive_production.html">
+</iframe>
+
+
+
+
+
+
+## Principal component analysis
+
+The goal is to use the function PCA from R to explain the Drug consumption in the USA.
+
+<span style="font-family:Arial; font-size:3em;"> Dashboard </span>
+
+<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="1000"
+    height="700"
+    src="dashboard.html">
+</iframe>
+
+
+
+<span style="font-family:Arial; font-size:3em;"> Repport </span>
+
+<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="1000"
+    height="700"
+    src="projet.html">
+</iframe>
+
+
+## Text Mining with python
+
+What do young Tunisians think of emigration?
+The purpose of this project is to provide some answers to this question.
+To do this a  survey was carried out during which ,several questions were asked. However for this work, we will only deal with the answers to two of these questions:
+What is the difference from a social point of view between Tunisia and abroad?
+What is the difference in the professional point of view between Tunisia and abroad?
+
+
+we use the NLTK package; You can find the repport here : [repport](RAPPORT.pdf)
+
+
+
+
+
+
+## Other projects
+
+ 
+
+ * creation of a geostatistical tool for the coverage of the three mobile networks (HTML, JAVA)
+
+ * handling of tensorflow: classification of mninst database using CNN (python)
+
+ * calculates an economic trajectory (programmation R)
+
+ * completion of a Student Exit Survey (R)
+ 
+ * creating an application for managing an online library (Java)
+
+ * creating an application: guessing game (Java)
+ 
+ * create a stability indicator for a class partition (R package)
+
